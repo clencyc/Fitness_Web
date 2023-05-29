@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthierWorld</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="Workouts.html">Workouts</a>
+        <a href="Gym.html">Gyms</a>
+        <a href="contact.html">ContactUs</a>
+      </div>
+      
+      <div id="main">
+        
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; HealthHub</span>
+      </div>
+      
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+</body>
+</html>
